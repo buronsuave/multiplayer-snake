@@ -3,8 +3,9 @@ const io = require('socket.io')(httpServer, {
   handlePreflightRequest: (req, res) => {
     res.writeHead(200, {
       "Access-Control-Allow-Origin": "https://hungry-elion-c413ff.netlify.app/",
+      "Access-Control-Allow-Methods": "GET,POST",
     });
-    res.end;
+    res.end();
   }
 });
 
