@@ -1,4 +1,8 @@
-const io = require('socket.io')();
+const io = require('socket.io')(httpServer, {
+  origins: ["https://warm-reef-58676.herokuapp.com/"]
+});
+
+
 const { initGame, gameLoop, getUpdatedVelocity } = require('./game');
 const { FRAME_RATE } = require('./constants');
 const { makeid } = require('./utils');
