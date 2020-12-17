@@ -1,8 +1,8 @@
 const io = require('socket.io')(httpServer, {
-  origins: ["https://warm-reef-58676.herokuapp.com/"], 
+  origins: ["https://hungry-elion-c413ff.netlify.app/"], 
   handlePreflightRequest: (req, res) => {
     res.writeHead(200, {
-      "Access-Control-Allow-Origin": "https://warm-reef-58676.herokuapp.com/",
+      "Access-Control-Allow-Origin": "https://hungry-elion-c413ff.netlify.app/",
     });
     res.end;
   }
